@@ -1,13 +1,13 @@
 #!/usr/bin/python
 
-## Ce script permet l'installation et le parametrage du serveur ntp "chrony" #
-####### Testé sur un système ubuntu version 20.04 lte ########################
+## Ce script permet l'installation et le parametrage auto du serveur ntp (chrony) #
+######## Testé sur un système Ubuntu 20.04.3 LTS #############################
 
 import os
 ####### installation de chrony ###############################################
 os.system("apt-get install -y chrony")
 
-####### emplacement du fichier de configuration ##############################
+####### emplacement du fichier de configuration  #############################
 fichier = open("/etc/chrony/chrony.conf","w")
 
 ####### edition du fichier ###################################################
