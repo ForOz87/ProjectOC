@@ -26,7 +26,7 @@ Modifier la ligne suivante en remplaçant enp0s3 par votre interface d'écoute:
 
 fichier1.write("INTERFACES=\"enp0s3\"")
 
-NB: Vous pouvez ajouter plusieurs interfaces d'écoutes.
+NB: On peut déclarer plusieurs interfaces d'écoutes en ajoutant des espaces.
 Enregistrer le fichier.
 
 
