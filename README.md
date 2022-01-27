@@ -35,5 +35,8 @@ Enregistrer le fichier.
 
 Autoriser l'execution des fichiers en tapant la ligne de commande suivante: sudo chmod +x dhcp.py ntp.py
 
-Executer les fichiers avec les commandes suivantes: sudo python3 dhcp.py
-sudo python3 dhcp.py ntp.py
+Executer le fichier dhcp.py avec la commande suivante: sudo python3 dhcp.py
+Le script fera automatiquement l'installation et la configureration de isc-dhcp-server.
+
+Executer le fichier ntp.py avec la commande suivante: sudo python3 ntp.py
+Le script va installer et configurer automatiquement chrony.
