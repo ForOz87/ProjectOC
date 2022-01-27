@@ -29,6 +29,8 @@ fichier1.write("INTERFACES=\"enp0s3\"")
 NB: On peut déclarer plusieurs interfaces en ajoutant des espaces.
 Enregistrer le fichier.
 
+Ouvrir le fichier ntp.py.
+Modifier la ligne suivante par le réseau des clients : fichier.write("\nallow 192.168.1.0/24")
 
 Autoriser l'execution des fichiers en tapant la ligne de commande suivante: sudo chmod +x dhcp.py ntp.py
 
