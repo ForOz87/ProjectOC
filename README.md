@@ -7,7 +7,7 @@ Utilisation
 
 Copier les deux fichiers dhcp.py et ntp.py, ouvrir le fichier dhcp.py et déclarer vos sous réseaux en modifiant la partie suivante:
 
-ichier2.write("\n##### Option générale par défaut #####\n")
+fichier2.write("\n##### Option générale par défaut #####\n")
 fichier2.write("\nserver-name \"dhcp.pz.oc\";")
 fichier2.write("\noption domain-name-servers 8.8.8.8;")
 fichier2.write("\ndefault-lease-time 7200;")
