@@ -1,11 +1,17 @@
 # ProjectOC
 
-Ces scripts permettent l'installation et la configuration d'un serveur DHCP et NTP.
-A lancer avec sudo pour ne pas avoir de problèmes de droits.
+Ces scripts permettent l'installation et la configuration automatique
+d'un serveur DHCP (isc-dhcp-server) et d'un serveur NTP (chrony).
+
+Testé sur un système Ubuntu 20.04.3 LTS.
 
 Utilisation
 
-Copier les deux fichiers dhcp.py et ntp.py, ouvrir le fichier dhcp.py et déclarer vos sous réseaux en modifiant la partie suivante:
+Utiliser la commande sudo pour ne pas avoir de problèmes de droits.
+
+Copier les deux fichiers dhcp.py et ntp.py dans un repertoire de la machine.
+Ouvrir le fichier dhcp.py et déclarer l'option générale et le sous réseau en
+modifiant les parties suivantes :
 
 fichier2.write("\n##### Option générale par défaut #####\n")
 fichier2.write("\nserver-name \"dhcp.pz.oc\";")
@@ -22,11 +28,11 @@ fichier2.write("\noption routers 192.168.1.254;")
 fichier2.write("\noption domain-name-servers 192.168.13.1;")
 fichier2.write("\n}\n")
 
-Modifier la ligne suivante en remplaçant enp0s3 par votre interface d'écoute:
-
-fichier1.write("INTERFACES=\"enp0s3\"")
+Modifier la ligne suivante: fichier1.write("INTERFACES=\"enp0s3\"").
+Remplacer enp0s3 par votre interface d'écoute.
 
 NB: On peut déclarer plusieurs interfaces en ajoutant des espaces.
+Exemple: "enp0s3 enp0s8".
 Enregistrer le fichier.
 
 Ouvrir le fichier ntp.py.
