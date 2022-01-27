@@ -1,13 +1,14 @@
 #!/usr/bin/python
 
-# Ce script permet l'installation et la configuration d'un serveur dhcp #
-######## Il a été testé sur un système Ubuntu 20.04 LTE ################# 
+### Ce script permet l'installation et la configuration automatique #####
+### de isc-dhcp-server                              ##################### 
+######## Testé sur un système Ubuntu 20.04.3 LTS    ##################### 
 
 import os
-######## Installation du serveur dhcp ###################################
+########       Installation du serveur dhcp         #####################
 os.system("apt-get install -y isc-dhcp-server")
 
-######## Emplacement des fichiers de configuration ######################
+######## Emplacement des fichiers de configuration  #####################
 fichier1 = open("/etc/default/isc-dhcp-server","w")
 fichier2 = open("/etc/dhcp/dhcpd.conf","w")
 
