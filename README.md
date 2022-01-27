@@ -31,6 +31,7 @@ Enregistrer le fichier.
 
 Ouvrir le fichier ntp.py.
 Modifier la ligne suivante par le réseau des clients : fichier.write("\nallow 192.168.1.0/24")
+Enregistrer le fichier.
 
 Autoriser l'execution des fichiers en tapant la ligne de commande suivante: sudo chmod +x dhcp.py ntp.py
 
